@@ -1,1 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5578ff"/><stop offset="1" stop-color="#6d5ce7"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="url(#g)"/><path d="M16 18h32v7H35v23h-7V25H16z" fill="#fff"/><path d="M39 31h10v7H39v10h-7V38c0-4 3-7 7-7" fill="#9ff2ed"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgG" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#010220"/>
+    </radialGradient>
+
+    <!-- Main T Emblem Gradient -->
+    <linearGradient id="tGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <!-- Orbital Ring Gradient -->
+    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="60%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Container -->
+  <rect width="100" height="100" rx="24" fill="url(#bgG)"/>
+  <rect width="98" height="98" x="1" y="1" rx="23" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.3"/>
+
+  <!-- Back Portion of Orbital Ring -->
+  <path d="M 24 50 C 22 42, 38 34, 62 33 C 74 32, 82 35, 84 40" fill="none" stroke="url(#orbitGrad)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Stylized "T" -->
+  <!-- Top Horizontal Bar -->
+  <path d="M 30 33 L 73 33 C 75 33, 76 35, 75 37 L 72 41 C 71 42, 69 43, 67 43 L 42 43 C 34 43, 30 39, 30 33 Z" fill="url(#tGrad)" filter="url(#glow)"/>
+  
+  <!-- Curved T Stem -->
+  <path d="M 47 38 C 50 38, 52 40, 51 43 L 43 71 C 42 74, 39 76, 36 75 L 34 74 C 33 73, 34 71, 35 69 L 43 42 C 44 40, 45 38, 47 38 Z" fill="url(#tGrad)"/>
+
+  <!-- Front Swoop Portion of T & Ring -->
+  <path d="M 48 38 C 58 44, 64 53, 56 63 C 50 70, 41 73, 36 75" fill="none" stroke="url(#tGrad)" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Front Portion of Orbital Ring -->
+  <path d="M 23 52 C 22 58, 32 66, 52 64 C 64 62, 74 56, 78 48" fill="none" stroke="url(#orbitGrad)" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Top Right Spark / Star -->
+  <polygon points="76,24 78,28 82,30 78,32 76,36 74,32 70,30 74,28" fill="#ffffff" filter="url(#glow)"/>
+</svg>
