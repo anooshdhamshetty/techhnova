@@ -1,50 +1,62 @@
-# TechhNova website
+# TechhNova — Independent Technology Publication & Software Directory
 
-A responsive, multi-page static website for TechhNova, an independent technology discovery initiative.
+TechhNova is an emerging, independent technology publication focused on discovering, evaluating, and explaining digital software tools for students, developers, and small businesses.
 
-## Included pages
-- `index.html` — Home
-- `about.html` — About the initiative and founder
-- `explore.html` — AI, SaaS, developer tools, productivity and education technology
-- `disclosure.html` — Affiliate disclosure and privacy notice
-- `contact.html` — Contact information
+**Live Website:** [https://anooshdhamshetty-techhnova.vercel.app](https://anooshdhamshetty-techhnova.vercel.app)  
+**Founder:** Anoosh Dhamshetty (Hyderabad, Telangana, India)  
+**Contact:** [anooshdhamshetty@gmail.com](mailto:anooshdhamshetty@gmail.com) · [LinkedIn](https://www.linkedin.com/in/anoosh-dhamshetty/)
 
-## Preview locally
-1. Extract the ZIP.
-2. Open `index.html` in a browser.
+---
 
-For a local development server, run from this folder:
+## 🏛️ Website Architecture & Included Pages
+
+### Core Pages
+- `index.html` — Homepage featuring category portals, editorial guides spotlight, coding assistant comparison matrix, and methodology overview.
+- `explore.html` — Software Discovery Directory with dynamic search, category tabs (AI Writing, Coding, Productivity, Dev Tools, Project Management, EdTech), and 14 verified product cards.
+- `about.html` — Background story, target audience, values, and founder information.
+- `editorial-policy.html` — Dedicated research methodology, desk research vs. hands-on testing standards, pricing verification, and correction procedures.
+- `disclosure.html` / `affiliate-disclosure.html` — FTC and partner network affiliate disclosure, pricing neutrality guarantee, and cookie policy.
+- `privacy.html` — Dedicated privacy policy covering data handling, minimal logging, and cookie disclosures.
+- `contact.html` — Professional contact interface with pre-formatted email templates for corrections, tool suggestions, and partnerships.
+
+### Editorial Articles & Guides (`/blog/`)
+- `blog/index.html` — Editorial hub indexing all technology guides.
+- `blog/best-ai-tools-for-students.html` — "Best AI Tools for Students and Beginners (2026 Guide)"
+- `blog/ai-coding-assistants.html` — "Useful AI Coding Assistants for Developers: A Practical Guide"
+- `blog/productivity-tools.html` — "Best Productivity Tools for Students and Professionals"
+- `blog/how-to-choose-saas-software.html` — "How to Choose the Right SaaS Software for Your Business"
+- `blog/free-vs-paid-ai-tools.html` — "Free vs Paid AI Tools: What Should You Choose?"
+
+### SEO & Technical Files
+- `sitemap.xml` — Complete XML sitemap for search engines.
+- `robots.txt` — Search engine crawling directives.
+- `vercel.json` — Clean URL routing, security headers, and redirect rules.
+- `assets/styles.css` — High-performance responsive stylesheet.
+- `assets/site.js` — Client-side search, filtering, and navigation toggle.
+- `assets/favicon.svg` — Brand mark vector favicon.
+
+---
+
+## 🚀 Local Development & Preview
+
+Run a lightweight static server from this folder:
 ```bash
 python -m http.server 8000
 ```
-Then visit `http://localhost:8000`.
+Then visit `http://localhost:8000` in your web browser.
 
-## Free deployment options
+---
 
-### GitHub Pages
-1. Create a GitHub repository, for example `techhnova`.
-2. Upload all files and folders from this package to the repository root.
-3. Open repository **Settings → Pages**.
-4. Under Build and deployment, select **Deploy from a branch**.
-5. Choose branch `main` and folder `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish the site. Your URL will be shown in Settings → Pages.
+## ☁️ Deployment
 
-### Vercel
-1. Create a new GitHub repository and upload these files.
-2. Sign in to Vercel and choose **Add New → Project**.
-3. Import the repository.
-4. For a plain static site, leave the framework preset as Other; no build command is needed.
-5. Set the output directory to `.` if requested, then deploy.
+### Vercel Deployment
+The repository is structured for native zero-configuration static deployment on Vercel:
+1. Push changes to GitHub: `git push origin main`.
+2. Vercel automatically detects and deploys the static files using `vercel.json`.
 
-## Before submitting to PartnerStack
-- Publish the website and verify the public URL in an incognito/private browser window.
-- Confirm the email and LinkedIn links work.
-- Only state channels and audience figures that are accurate. This website does not claim an established audience or existing referral traffic.
-- Add genuine product reviews or useful content as you create them; the Explore page currently labels category content as in development.
-- PartnerStack makes its own approval decision. A website alone does not guarantee acceptance.
+---
 
-## Important notes
-- The site is static and does not collect form submissions. The contact email opens the visitor's email application.
-- Google Fonts are loaded from Google Fonts when a visitor has internet access; fallback system fonts are provided by the browser.
-- Review and update the privacy notice if you add analytics, embedded third-party content, cookies, newsletter tools or other tracking.
-- Replace any placeholder or outdated content before publishing.
+## 📜 Editorial & Compliance Principles
+- **No Sponsored Reviews:** We do not accept paid placement or sell ranking spots to software vendors.
+- **Affiliate Transparency:** Disclosures appear on all relevant pages before outbound links. Readers never pay extra when using affiliate links.
+- **Verification Standards:** All pricing and features are verified against official documentation, with explicit "Hands-on Tested" vs. "Researched Spec" labels.
