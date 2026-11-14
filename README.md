@@ -17,7 +17,9 @@ TechhNova is an emerging, independent technology publication focused on discover
 - `editorial-policy.html` — Dedicated research methodology, desk research vs. hands-on testing standards, pricing verification, and correction procedures.
 - `disclosure.html` / `affiliate-disclosure.html` — FTC and partner network affiliate disclosure, pricing neutrality guarantee, and cookie policy.
 - `privacy.html` — Dedicated privacy policy covering data handling, minimal logging, and cookie disclosures.
+- `terms.html` — Professional Terms of Service covering acceptable conduct, intellectual property, affiliate terms, disclaimers, and limitation of liability under Indian jurisdiction.
 - `contact.html` — Professional contact interface with pre-formatted email templates for corrections, tool suggestions, and partnerships.
+- `TechhNova-Media-Kit.pdf` — Downloadable one-page professional media kit for PartnerStack managers and SaaS affiliate partners.
 
 ### Editorial Articles & Guides (`/blog/`)
 - `blog/index.html` — Editorial hub indexing all technology guides.
